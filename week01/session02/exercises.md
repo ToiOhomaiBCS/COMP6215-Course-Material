@@ -38,3 +38,64 @@ private static void Main(string[] args)
     Console.WriteLine(names.Count);
 }
 ```
+
+# Exercise 02 
+
+Looking at the code below refactor the code according to the Single Responsibility Principle
+
+Answer the following questions as a class or as the tutor comes around:
+
+* What errors can you see when it comes to UI and Business Logic Separation
+* Do all the methods fit into this class according to SRP?
+* What is missing from the Person class? (1 or more things...)
+
+## Your Task:
+
+* Refactor the code.
+* You have to keep the Person class, but you are free to add others
+
+```
+class Person
+{
+    public string Fname { get; set; }
+    public string Lname { get; set; }
+    public string Email { get; set; }
+
+    public void Introduction(string name)
+    {
+        Console.WriteLine("Hello, my name is" + name);
+    }
+
+    public int DisplayMyAge()
+    {
+        return 36;
+    }
+
+    public void HasBirthday()
+    {
+        Console.WriteLine(36 + 1);
+    }
+
+    public void ShowStudentId()
+    {
+        Console.WriteLine("1003004");
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Person Billy = new Person();
+        Billy.Fname = "Billy";
+        Billy.Lname = "Simpson";
+        Billy.Email = "billy.simpson@acme.com";
+
+        Billy.Introduction(Billy.Fname);
+        Billy.DisplayMyAge();
+        Billy.HasBirthday();
+        Billy.DisplayMyAge();
+        Billy.ShowStudentId();
+    }
+}
+```
