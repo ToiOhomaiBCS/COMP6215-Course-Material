@@ -7,70 +7,31 @@ namespace Exercise01
     {
         static void Main(string[] args)
         {
-            //Uncomment below when you are using constructors
+            Shape shape1 = new Rectangle();
+            shape1.Width = 24.00;
+            shape1.Height = 8.00;
 
-            //List<object> rectangles = new List<object>
-            //{
-            //    new Rectangle(24.00, 8.00),
-            //    new Rectangle(36.00, 9.00),
-            //    new Elipse(12.00, 12.00)
-            //};
+            Shape square1 = new Square();
+            square1.Width = 24.00;
+            square1.Height = 12.00;
 
-            //foreach (var shape in rectangles)
-            //{
-            //    if (shape is Rectangle)
-            //    {
-            //        Rectangle rectangle = (Rectangle)shape;
-            //        Console.WriteLine(rectangle.Area());
-            //    }
-            //    else
-            //    {
-            //        Elipse elipse = (Elipse)shape;
-            //        Console.WriteLine(elipse.Area());
-            //    }
-            //}
+            Shape[] allTheRectangles = new Shape[2] { shape1, square1 };
 
-            //Comment out below when you are using constructors
-
-            Rectangle rect1 = new Rectangle();
-            rect1.Width = 24.00;
-            rect1.Height = 8.00;
-
-            Elipse elipse1 = new Elipse();
-            elipse1.Width = 24.00;
-            elipse1.Height = 8.00;
-
-            Shape[] allTheRectangles = new Shape[2] { rect1, elipse1 };
-
-            Console.WriteLine(string.Join(",", AreaCalculator.Area(allTheRectangles)));
+            Console.WriteLine(string.Join("\n", AreaCalculator.Area(allTheRectangles)));
         }
     }
 
     public abstract class Shape
     {
-        public abstract double Area();
-    }
-
-    public class Elipse : Shape
-    {
         public double Width { get; set; }
         public double Height { get; set; }
-        public override double Area()
-        {
-            return Width * Height * Math.PI;
-        }
-
-        //public Elipse(double w, double h)
-        //{
-        //    Width = w;
-        //    Height = h;
-        //}
+        public abstract double Area();
     }
 
     public class Rectangle : Shape
     {
-        public double Width { get; set; }
-        public double Height { get; set; }
+        //public double Width { get; set; }
+        //public double Height { get; set; }
         public override double Area()
         {
             return Width * Height;
@@ -80,6 +41,21 @@ namespace Exercise01
         //{
         //    Width = w;
         //    Height = h;
+        //}
+    }
+
+    public class Square : Shape
+    {
+        //public double Width { get; set; }
+        //public double Height { get; set; }
+        public override double Area()
+        {
+            return Width * Height;
+        }
+
+        //public Square()
+        //{
+
         //}
     }
 

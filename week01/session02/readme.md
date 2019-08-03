@@ -13,7 +13,7 @@ Each week in this section of the course we will look at 1 or 2 of the SOLID prin
 
 The principles stand for:
 
-* Single Repsonsibility Principle
+* **Single Repsonsibility Principle**
 * Open Closed Principle
 * Liskov Substitution Principle
 * Interface Segregation Principle
