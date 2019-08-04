@@ -2,7 +2,7 @@
 course: COMP6210
 week: 02
 lesson: 01
-topic: gui-part2
+topic: common-gui-elements
 ---
 
 [![Print](https://img.shields.io/badge/DOWNLOAD_PDF-CLICK_HERE-blue.svg)](https://github.com/ToiOhomaiBCS/COMP6215-Course-Material/raw/master/week02/session01/readme.pdf)
