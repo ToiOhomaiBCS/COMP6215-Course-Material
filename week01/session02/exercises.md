@@ -1,3 +1,13 @@
+---
+course: COMP6210
+week: 01
+lesson: 01
+topic: solid-principle-1-single-responsibility-principle-exercises
+---
+
+[![Print](https://img.shields.io/badge/DOWNLOAD_PDF-CLICK_HERE-blue.svg)](https://github.com/ToiOhomaiBCS/COMP6215-Course-Material/raw/master/week01/session02/exercises.pdf)
+
+
 # Exercise 01
 
 Looking at the code below, refactor this code to comply with the Single Responsibility Principle.  
