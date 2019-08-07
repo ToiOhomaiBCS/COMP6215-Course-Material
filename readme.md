@@ -14,6 +14,7 @@ This is the course material for GUI programming.
 **Week 7 - 12**
 
 * Creating your own ReST Api using ASP.net Core
+* Connecting the API to a GUI Application
 
 ## Model Answers
 
