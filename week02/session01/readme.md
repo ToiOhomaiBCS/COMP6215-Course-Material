@@ -1,5 +1,5 @@
 ---
-course: COMP6210
+course: COMP6215
 week: 02
 lesson: 01
 topic: gui-part2

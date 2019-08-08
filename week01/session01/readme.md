@@ -1,5 +1,5 @@
 ---
-course: COMP6210
+course: COMP6215
 week: 01
 lesson: 01
 topic: what-is-gui-programming

@@ -1,11 +1,11 @@
 ---
-course: COMP6210
+course: COMP6215
 week: 03
-lesson: 02
+lesson: "02a"
 topic: solid-principle-3-liskov-subsitution-principle
 ---
 
-[![Print](https://img.shields.io/badge/DOWNLOAD_PDF-CLICK_HERE-blue.svg)](https://github.com/ToiOhomaiBCS/COMP6215-Course-Material/raw/master/week03/session02/readme.pdf)
+[![Print](https://img.shields.io/badge/DOWNLOAD_PDF-CLICK_HERE-blue.svg)](https://github.com/ToiOhomaiBCS/COMP6215-Course-Material/raw/master/week03/session02a/readme.pdf)
 
 # SOLID Principles
 

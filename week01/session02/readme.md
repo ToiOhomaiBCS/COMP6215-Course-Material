@@ -1,5 +1,5 @@
 ---
-course: COMP6210
+course: COMP6215
 week: 01
 lesson: 02
 topic: solid-principle-1-single-responsibility-principle
