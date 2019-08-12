@@ -1,0 +1,58 @@
+﻿<Window x:Class="Styling.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Styling"
+        mc:Ignorable="d"
+        Title="Styled Cats" Height="250" Width="1200">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="StyleDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        
+        <StackPanel Orientation="Vertical" Grid.Row="0">
+            <Label Content="Random Cats" />
+        </StackPanel>
+        <StackPanel  Grid.Row="1">
+            
+            <Border >
+                <Image Source="Images/cat01.jpg" />
+            </Border>
+
+            <Border >
+                <Image Source="Images/cat02.jpg" />
+            </Border>
+
+            <Border >
+                <Image Style="{StaticResource SomeCats}" Source="Images/cat03.jpg" />
+            </Border>
+            
+            <Image Source="Images/cat04.jpg" />
+            
+            <Image Style="{StaticResource SomeCats}" Source="Images/cat05.jpg" />
+
+            <Image Source="Images/cat01.jpg" >
+                <Image.Resources>
+                    <Style TargetType="Image">
+                        <Setter Property="Margin" Value="70, 0, 40, 40" />
+                        <Setter Property="Width" Value="100" />
+                    </Style>
+                </Image.Resources>
+                <Image.RenderTransform>
+                    <RotateTransform Angle="45" />
+                </Image.RenderTransform>
+            </Image>
+            
+        </StackPanel>
+    </Grid>
+</Window>
