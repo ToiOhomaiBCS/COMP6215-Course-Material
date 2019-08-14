@@ -44,10 +44,7 @@ If you do not have the full Visual Studio installed, you will need to grab the d
 
 When you type in the command `dotnet new`. You will then see a list of all the options that you can download:
 
-<figure>
-<img src="https://raw.githubusercontent.com/ToiOhomaiBCS/COMP6215-Course-Material/master/images/dotnet-options.png" alt="dotnet options">
-<figcaption>Options available in dotnet version 2.2</figcaption>
-</figure>
+![dotnet options](../../images/dotnet-options.png)
 
 In some classes you may have used dotnet core to create console apps
  by using the command `dotnet new console`. Creating an ASP.NET app works very much the same, but there are more options.
@@ -76,17 +73,11 @@ In some classes you may have used dotnet core to create console apps
 
 Using the full Visual Studio IDE, you are presented with a window like this where you can select your project:
 
-<figure>
-<img src="https://raw.githubusercontent.com/ToiOhomaiBCS/COMP6215-Course-Material/master/images/vs-001.png" alt="dotnet options">
-<figcaption>Select Dotnet Core Project</figcaption>
-</figure>
+![dotnet options](../../images/vs-001.png)
 
 Next you can choose the template you want to use for your project
 
-<figure>
-<img src="https://raw.githubusercontent.com/ToiOhomaiBCS/COMP6215-Course-Material/master/images/vs-002.png" alt="choose template">
-<figcaption>Select Dotnet Core Project</figcaption>
-</figure>
+![dotnet options](../../images/vs-002.png)
 
 Note to disable the HTTPS options while you are doing the projects in the beginning since we are just doing local development.
 
@@ -108,14 +99,11 @@ As far as the applications operation, the outcome is the same.
 
 ### Solution Based Option
 
-<img src="https://raw.githubusercontent.com/ToiOhomaiBCS/COMP6215-Course-Material/master/images/vs-003-using-sln-file.png" alt="choose template"> 
+![dotnet options](../../images/vs-003-using-sln-file.png)
 
 ### Folder Based Option
 
-<img src="https://raw.githubusercontent.com/ToiOhomaiBCS/COMP6215-Course-Material/master/images/vs-004-open-folder.png" alt="choose template">
-
-
-
+![dotnet options](../../images/vs-004-open-folder.png)
 
 * Introduction to ASP.net Core
 * Dotnet Core Option / Visual Studio Option
