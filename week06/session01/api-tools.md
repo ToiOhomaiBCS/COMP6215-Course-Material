@@ -33,3 +33,16 @@ To install Postman, you will need admin rights for your machine. You will not ne
 
 With these tools we are able to test the apis we are going to create.
 
+# How does it all work
+
+When we run the web api server, we do not see a traditional webpage that might expect when going to a normal URL.
+What we see is a string with data. That string is a format called JSON and that string is made of Key Value pair sets of data.
+
+Why JSON?
+
+Well when we loop over a set of data it is in a form of a collection (Array, Lists, Dictionaries). These coillections are objects that are made up of several parts and are therefore difficult to transprt as a single object.
+
+JSON is a string that holds the data structure of your collection.
+
+JSON = JavaScript Object Notation and if you look at some JSON data you will see a pattern of these Key Value pairs.
+
