@@ -40,9 +40,13 @@ What we see is a string with data. That string is a format called JSON and that 
 
 Why JSON?
 
-Well when we loop over a set of data it is in a form of a collection (Array, Lists, Dictionaries). These coillections are objects that are made up of several parts and are therefore difficult to transprt as a single object.
+Well when we loop over a set of data it will be done so as a collection (Array, Lists, Dictionaries). These coillections are objects that are made up of several parts and are therefore difficult to transprt as a single object.
 
 JSON is a string that holds the data structure of your collection.
 
 JSON = JavaScript Object Notation and if you look at some JSON data you will see a pattern of these Key Value pairs.
+
+Although there are other types of API's that we can create, ASP.net Core is design from the ground up to support JSON and MVC based ReST API
+
+
 

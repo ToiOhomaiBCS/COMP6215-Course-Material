@@ -9,6 +9,6 @@ topic: setting-up-mvc-project
 
 # Setting up MVC Project
 
-• Pulling in JSON Data from remote API
-• Pulling in JSON Data from local API
-• Submitting data to local API
+* Pulling in JSON Data from remote API
+* Pulling in JSON Data from local API
+* Submitting data to local API
