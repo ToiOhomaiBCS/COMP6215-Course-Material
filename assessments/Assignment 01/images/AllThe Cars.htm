@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://localhost:8000/week06/session01/add.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="./AllThe Cars_files/mystyle.css">
+
+  <title>AllThe Cars</title>
+</head>
+<body>
+  
+
+  <div id="modal-container">
+    <div id="modal">
+      
+      <header>
+        <span class="title">Add Vehicles</span>
+        <span class="addcar"><a href="http://localhost:8000/week06/session01/index.html" style="text-decoration: none; color: white; transform:rotate(45deg);">+</a></span>
+      </header>
+
+      <div class="form-body">
+
+        <div class="form-group make">
+          <label>Make:</label>
+          <input type="text" id="car_make" placeholder="Toyota">
+        </div>
+
+        <div class="form-group model">
+          <label>Models:</label>
+          <textarea id="models_area" placeholder="car1, car2, car3"></textarea>
+        </div>
+
+        <div class="form-group button">
+            <label>Submit:</label>
+            <button type="submit">Add Cars</button>
+          </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+
+    let button = document.querySelector('button');
+
+    button.addEventListener('click', () => {
+
+      let make = document.querySelector('#car_make').value;
+      let models = document.querySelector('#models_area').value;
+
+      let url = 'http://localhost:8000/week06/session01/api/addData.php'
+
+      let data = {_make: make, _models: models};
+
+      //console.log(JSON.stringify(data))
+
+      fetch(url, {
+        method: 'POST', // or 'PUT'
+        body: JSON.stringify(data), // data can be `string` or {object}!
+        headers:{
+          'Content-Type': 'application/json'
+        }
+      }).then(res => res.json())
+      .then(response => console.log('Success:', JSON.stringify(response)))
+      .catch(error => console.error('Error:', error));
+
+    })
+
+    
+
+
+
+  </script>
+
+
+</body></html>

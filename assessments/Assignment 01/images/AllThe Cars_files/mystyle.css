@@ -1,0 +1,176 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+header {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  height: 100px;
+  background-color: #9E3131;
+  color: #fff;
+}
+
+.title {
+  display: flex;
+  flex: 11;
+
+  justify-content: flex-start;
+    
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  font-size: 50px;
+
+}
+
+.addcar {
+  display: flex;
+  flex: 1;
+
+  justify-content: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  font-size: 50px;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.carDisplay {
+
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  flex: 1;
+  max-width: 300px;
+
+  height: 350px;
+
+  background: #741818;
+  color: #fff;
+  border-radius: 30px;
+
+  padding: 30px;
+  margin: 20px;
+  box-sizing: border-box;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.carDisplay > h2 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.carDisplay > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.carDisplay > ul > li {
+
+  display: flex;
+  flex: 1;
+
+  justify-content: flex-start;
+  font-size: 30px;
+
+  margin: 5px;
+}
+
+/* MODAL */
+
+/*
+
+*/
+
+#modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#modal {
+  width: 100%;
+  height: 600px;
+
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+#modal > header {
+  max-height: 100px;
+}
+
+.form-body {
+
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  height: 500px;
+  
+}
+
+.form-group {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  font-size:  30px;
+  justify-content: baseline;
+  align-content: center;
+
+  box-sizing: border-box;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.make {
+  max-height: 100px;
+}
+
+.model {
+  max-height: 300px;
+}
+
+.form-group > label {
+  flex: 1;
+}
+
+.form-group > input {
+  flex: 3;
+  font-size: 30px;
+}
+
+.form-group > textarea {
+  flex: 3;
+  height: 200px;
+  font-size: 20px;
+}
+
+.form-group >  button {
+  flex:3;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: cornflowerblue;
+}
